@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace stalker
 {
 	class Stalker
-	{
 		public double v0 = 1.42; //regular speep
 		public string name;     // name 
 		public double cap;      // capacity 
@@ -21,10 +20,6 @@ namespace stalker
 
 		public double carry()           // method: calculate speed with artifacts
 		{
-			double x, y, z;             // !!!REFACTORING
-			x = item * item;
-			y = cap * cap;
-			z = 1 + x / y;
 			return  v0 / (1 + item * item/cap * cap);
 		}
 
@@ -34,7 +29,7 @@ namespace stalker
 		}
 		public void Show()              // method: output all data for each Stalker
 		{
-            Console.WriteLine("\t Name - " + name + " Capacity = " + cap  + " Regular speed = " + v0);
+            Console.WriteLine("\n\t NAME - {0} CAPACITY = {1} REGULAR SPEED = {2}", name, cap, v0);
 		}
 
 	}

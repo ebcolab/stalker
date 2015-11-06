@@ -6,9 +6,8 @@ namespace stalker
 	{
 		static void Main(string[] args)
 		{
-           // double v0 = 1.42;
 			
-			string[] name = new string[3];      // array of name
+			string[] name = new string[3];	  // array of name
 			Console.WriteLine("Input names stalkers");
 			for (int i = 0; i < name.Length; i++)
 			{
@@ -40,7 +39,7 @@ namespace stalker
 				{
 					S[i].accrue(art[i, j]);
 
-					Console.WriteLine("Weight = " + S[i].item + "\t Speed with artifacts =" + S[i].carry());
+					Console.WriteLine("weight = {0}\tspeed = {1:N4}", S[i].item, S[i].carry());
 				}
 			}
 			Console.ReadKey();
