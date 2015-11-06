@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace stalker
 {
 	class Stalker
+	{
 		public double v0 = 1.42; //regular speep
 		public string name;     // name 
 		public double cap;      // capacity 
