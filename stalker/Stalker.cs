@@ -34,7 +34,7 @@ namespace stalker
 		}
 		public void Show()              // method: output all data for each Stalker
 		{
-            Console.WriteLine("Name - " + name + " Carrying capacity = " + cap + " Weight of artifacts = " + item + " Regular speed = " + v0);
+            Console.WriteLine("\t Name - " + name + " Capacity = " + cap  + " Regular speed = " + v0);
 		}
 
 	}

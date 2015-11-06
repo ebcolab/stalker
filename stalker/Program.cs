@@ -6,17 +6,17 @@ namespace stalker
 	{
 		static void Main(string[] args)
 		{
-			
+           // double v0 = 1.42;
 			
 			string[] name = new string[3];      // array of name
-			Console.WriteLine("Input name");
+			Console.WriteLine("Input names stalkers");
 			for (int i = 0; i < name.Length; i++)
 			{
 				name[i] = Console.ReadLine();
 			}
             
 			int[] cap = new int[3];             // array of capacity    
-			Console.WriteLine("Input Carrying capacity for each stalker");
+			Console.WriteLine("Input carrying capacity for each stalker");
 			for (int i = 0; i < cap.Length; i++)
 			{
 				cap[i] = Convert.ToInt32(Console.ReadLine());
@@ -27,15 +27,15 @@ namespace stalker
 			
 			
 			Stalker[] S = new Stalker[3];           // array of Stalker
-			for (int i = 0; i < S.Length; i++)
-			{
-				S[i] = new Stalker(name[i], cap[i]);
-				S[i].Show();
-				//Console.WriteLine("Speed with artefacts = " + s[i].carry(accrue[i));
+            for (int i = 0; i < S.Length; i++)
+            {
+                S[i] = new Stalker(name[i], cap[i]);
 			}
-			for (int i = 0; i < 3; i++)
-			{
-				Console.WriteLine("\t Name " + S[i].name);
+
+
+            for (int i = 0; i < 3; i++)
+            {
+                S[i].Show();
 				for (int j = 0; j < art.GetLength(1); j++)
 				{
 					S[i].accrue(art[i, j]);
